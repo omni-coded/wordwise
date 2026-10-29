@@ -1,0 +1,202 @@
+/* Design tokens. Navy / charcoal / ivory / muted gold. Light is a warm ivory, dark a deep navy; the device preference decides unless the player chooses. */
+:root {
+  color-scheme: light;
+  --bg: #f6f1e7;
+  --bg-2: #efe8da;
+  --surface: #fffdf8;
+  --surface-2: #f7f1e4;
+  --surface-3: #ebe2cf;
+  --line: rgba(13, 20, 36, 0.12);
+  --line-strong: rgba(13, 20, 36, 0.28);
+  --text: #141a2b;
+  --text-2: #424a5f;
+  --text-3: #5f677a;
+  --gold: #8a6a2b;
+  --gold-2: #a8823a;
+  --gold-ink: #fffaf0;
+  --gold-soft: rgba(138, 106, 43, 0.12);
+  --good: #3f7448;
+  --good-soft: rgba(63, 116, 72, 0.12);
+  --bad: #b2463a;
+  --bad-soft: rgba(178, 70, 58, 0.1);
+  --info: #3f6597;
+  --shadow: 0 12px 30px rgba(40, 30, 10, 0.14);
+  --shadow-sm: 0 2px 8px rgba(40, 30, 10, 0.1);
+  --focus: #1b3a73;
+  --scrim: rgba(20, 26, 43, 0.5);
+}
+
+/* Dark: by device preference, by a host that sets data-theme, or by the app's own resolved choice (data-resolved). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+  color-scheme: dark;
+  --bg: #0d1424;
+  --bg-2: #111a2e;
+  --surface: #162038;
+  --surface-2: #1c2745;
+  --surface-3: #25325a;
+  --line: rgba(241, 236, 224, 0.1);
+  --line-strong: rgba(241, 236, 224, 0.2);
+  --text: #f1ece0;
+  --text-2: #bdbfc2;
+  --text-3: #8f95a3;
+  --gold: #c9a96a;
+  --gold-2: #dcc189;
+  --gold-ink: #1a1405;
+  --gold-soft: rgba(201, 169, 106, 0.16);
+  --good: #8fbf93;
+  --good-soft: rgba(143, 191, 147, 0.16);
+  --bad: #e0867b;
+  --bad-soft: rgba(224, 134, 123, 0.16);
+  --info: #86a9d6;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --focus: #e8cf98;
+  --scrim: rgba(5, 9, 18, 0.66);
+  }
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0d1424;
+  --bg-2: #111a2e;
+  --surface: #162038;
+  --surface-2: #1c2745;
+  --surface-3: #25325a;
+  --line: rgba(241, 236, 224, 0.1);
+  --line-strong: rgba(241, 236, 224, 0.2);
+  --text: #f1ece0;
+  --text-2: #bdbfc2;
+  --text-3: #8f95a3;
+  --gold: #c9a96a;
+  --gold-2: #dcc189;
+  --gold-ink: #1a1405;
+  --gold-soft: rgba(201, 169, 106, 0.16);
+  --good: #8fbf93;
+  --good-soft: rgba(143, 191, 147, 0.16);
+  --bad: #e0867b;
+  --bad-soft: rgba(224, 134, 123, 0.16);
+  --info: #86a9d6;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --focus: #e8cf98;
+  --scrim: rgba(5, 9, 18, 0.66);
+}
+:root[data-resolved='dark'] {
+  color-scheme: dark;
+  --bg: #0d1424;
+  --bg-2: #111a2e;
+  --surface: #162038;
+  --surface-2: #1c2745;
+  --surface-3: #25325a;
+  --line: rgba(241, 236, 224, 0.1);
+  --line-strong: rgba(241, 236, 224, 0.2);
+  --text: #f1ece0;
+  --text-2: #bdbfc2;
+  --text-3: #8f95a3;
+  --gold: #c9a96a;
+  --gold-2: #dcc189;
+  --gold-ink: #1a1405;
+  --gold-soft: rgba(201, 169, 106, 0.16);
+  --good: #8fbf93;
+  --good-soft: rgba(143, 191, 147, 0.16);
+  --bad: #e0867b;
+  --bad-soft: rgba(224, 134, 123, 0.16);
+  --info: #86a9d6;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --focus: #e8cf98;
+  --scrim: rgba(5, 9, 18, 0.66);
+}
+:root[data-resolved='light'] {
+  color-scheme: light;
+  --bg: #f6f1e7;
+  --bg-2: #efe8da;
+  --surface: #fffdf8;
+  --surface-2: #f7f1e4;
+  --surface-3: #ebe2cf;
+  --line: rgba(13, 20, 36, 0.12);
+  --line-strong: rgba(13, 20, 36, 0.28);
+  --text: #141a2b;
+  --text-2: #424a5f;
+  --text-3: #5f677a;
+  --gold: #8a6a2b;
+  --gold-2: #a8823a;
+  --gold-ink: #fffaf0;
+  --gold-soft: rgba(138, 106, 43, 0.12);
+  --good: #3f7448;
+  --good-soft: rgba(63, 116, 72, 0.12);
+  --bad: #b2463a;
+  --bad-soft: rgba(178, 70, 58, 0.1);
+  --info: #3f6597;
+  --shadow: 0 12px 30px rgba(40, 30, 10, 0.14);
+  --shadow-sm: 0 2px 8px rgba(40, 30, 10, 0.1);
+  --focus: #1b3a73;
+  --scrim: rgba(20, 26, 43, 0.5);
+}
+
+:root[data-contrast='high'][data-resolved='dark'] {
+  --bg: #050912;
+  --surface: #0c1426;
+  --surface-2: #121c35;
+  --line: rgba(255, 255, 255, 0.35);
+  --line-strong: rgba(255, 255, 255, 0.7);
+  --text: #ffffff;
+  --text-2: #f0f0f0;
+  --text-3: #d6d9df;
+  --gold: #ffd98a;
+}
+:root[data-contrast='high'][data-resolved='light'] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f4f4f4;
+  --line: rgba(0, 0, 0, 0.55);
+  --line-strong: #000000;
+  --text: #000000;
+  --text-2: #111111;
+  --text-3: #222222;
+  --gold: #6b4d0f;
+}
+
+:root {
+  --serif: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --display: var(--serif);
+  --radius: 14px;
+  --radius-sm: 9px;
+  --radius-lg: 22px;
+  --ease: cubic-bezier(0.22, 0.8, 0.28, 1);
+  --fs: 16px;
+  --gutter: clamp(16px, 4vw, 28px);
+  --gl: max(var(--gutter), env(safe-area-inset-left, 0px));
+  --gr: max(var(--gutter), env(safe-area-inset-right, 0px));
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+}
+:root[data-font='plain'] {
+  --display: var(--sans);
+}
+:root[data-text='small'] { --fs: 14.5px; }
+:root[data-text='medium'] { --fs: 16px; }
+:root[data-text='large'] { --fs: 18px; }
+:root[data-text='xlarge'] { --fs: 20.5px; }
+
+/* Grid themes: the letter board has its own palette so it can differ from the app chrome. */
+.board[data-grid='ivory'] { --g-bg: #f8f3e6; --g-ink: #17203a; --g-line: rgba(23, 32, 58, 0.14); --g-sel: #b8923f; --g-hint: #b8923f; }
+.board[data-grid='midnight'] { --g-bg: #0a1226; --g-ink: #e9d9ae; --g-line: rgba(233, 217, 174, 0.12); --g-sel: #e3c680; --g-hint: #e3c680; }
+.board[data-grid='parchment'] { --g-bg: #e9dcbd; --g-ink: #4a3519; --g-line: rgba(74, 53, 25, 0.2); --g-sel: #9a5d22; --g-hint: #9a5d22; }
+.board[data-grid='slate'] { --g-bg: #262c36; --g-ink: #e6e9ef; --g-line: rgba(230, 233, 239, 0.12); --g-sel: #9fc0e8; --g-hint: #9fc0e8; }
+.board[data-grid='sage'] { --g-bg: #dde5d6; --g-ink: #25382b; --g-line: rgba(37, 56, 43, 0.18); --g-sel: #4d7a56; --g-hint: #4d7a56; }
+.board[data-grid='dusk'] { --g-bg: #2b2140; --g-ink: #f2dfe8; --g-line: rgba(242, 223, 232, 0.13); --g-sel: #ee9db9; --g-hint: #ee9db9; }
+.board[data-grid='ink'] { --g-bg: #08090c; --g-ink: #fafafa; --g-line: rgba(255, 255, 255, 0.12); --g-sel: #f4d58a; --g-hint: #f4d58a; }
+
+/* Colours used for found-word highlights, cycled so neighbouring words stay distinguishable. */
+.board {
+  --h0: 201, 169, 106;
+  --h1: 120, 168, 128;
+  --h2: 214, 126, 134;
+  --h3: 112, 156, 214;
+  --h4: 172, 138, 210;
+  --h5: 226, 150, 88;
+  --h6: 82, 170, 168;
+  --h7: 196, 196, 112;
+}

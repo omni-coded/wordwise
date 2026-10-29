@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.logic.json",
+  "compilerOptions": { "jsx": "preserve", "lib": ["ES2022", "DOM", "DOM.Iterable"], "noEmit": true },
+  "include": ["src/ui/**/*", "src/main.tsx", "src/game/audio.ts", "src/game/index.ts", "types/*.d.ts"],
+  "exclude": []
+}

@@ -1,0 +1,71 @@
+import { defineCategory } from '../author';
+
+export default defineCategory({
+  id: 'computing',
+  name: 'Artificial Intelligence & Computing',
+  shortName: 'AI & Computing',
+  blurb: 'How machines learn, how computers work, and how the web stays secure.',
+  glyph: '⌬',
+  references: [
+    'Stanford HAI AI Index (hai.stanford.edu)',
+    'Vaswani et al. — Attention Is All You Need (2017)',
+    'NIST Computer Security Resource Center glossary (csrc.nist.gov/glossary)',
+    'MDN Web Docs glossary (developer.mozilla.org)',
+  ],
+  topics: [
+    {
+      id: 'ai-ml',
+      name: 'AI & Machine Learning',
+      connection:
+        'An algorithm is any step-by-step procedure, and machine learning tunes one using gradients. The perceptron was the first simple neuron model, classifiers sort inputs into categories, and transformers and embeddings power modern language systems that read text as tokens in response to a prompt. Overfitting and hallucination are two classic ways such systems fail.',
+      rows: [
+        ['Algorithm', 'AL-guh-rith-um', 2, 'A finite set of step-by-step instructions for solving a problem or completing a task.', 'A recipe is an everyday algorithm: follow the steps in order and you get the result.', 'The word comes from al-Khwarizmi, a 9th-century Persian scholar whose name was Latinized as Algoritmi.', 'Procedures like these power everything from search engines to navigation to medical software.'],
+        ['Overfitting', 'oh-ver-FIT-ing', 4, 'When a model learns its training data so closely, including random noise, that it performs poorly on new data.', 'The model scored perfectly on its training examples but failed on fresh ones, a classic case of overfitting.', 'Common defenses include more data, simpler models, and testing on a separate validation set.', 'Recognizing it prevents trusting results that will not hold up in the real world.'],
+        ['Tokenization', 'toh-kuh-nih-ZAY-shun', 4, 'Breaking text into smaller pieces, called tokens, such as words or word fragments, that a model can process.', 'Tokenization may split an uncommon word into several pieces, so long words can use more tokens.', 'Language models measure input and output length in tokens rather than characters or words, and a token is often a short word or part of one.', 'Token counts affect how much text a model can handle and how much it costs to use.'],
+        ['Embedding', 'em-BED-ing', 4, 'A list of numbers that represents the meaning of a word, image, or other item so that similar items sit close together.', 'In an embedding space, the vectors for cat and kitten sit closer together than those for cat and carburetor.', 'These representations let search tools match meaning rather than exact keywords.', 'They are a core building block of modern search, recommendation, and language systems.'],
+        ['Gradient', 'GRAY-dee-ent', 4, 'The direction and rate of steepest increase of a function; in machine learning, it guides how a model’s settings are adjusted.', 'Training follows the gradient downhill to reduce the model’s error step by step.', 'The technique is called gradient descent and is used to train most neural networks.', 'Understanding it explains how machines learn from mistakes.'],
+        ['Hallucination', 'huh-loo-sih-NAY-shun', 3, 'When an AI system produces confident-sounding output that is false or unsupported by its sources.', 'The chatbot’s invented citation was a hallucination, so the reference had to be checked.', 'Language models generate likely-sounding text, which is why they can state wrong facts fluently.', 'Verifying important claims against reliable sources is essential when using AI.'],
+        ['Transformer', 'trans-FOR-mer', 4, 'A neural network design that uses attention to weigh how relevant each part of its input is to every other part.', 'Most modern language models are built on the transformer architecture.', 'It was introduced in the 2017 paper Attention Is All You Need by researchers at Google.', 'It made it practical to train very large models on huge amounts of text.'],
+        ['Classifier', 'KLAS-ih-fy-er', 3, 'A model that assigns an input to one of several categories, such as spam or not spam.', 'An email classifier learns from labeled examples which messages are junk.', 'Accuracy can look high on unbalanced data even when the model misses the rare cases that matter most.', 'Knowing its limits matters in medicine, finance, and any area where mistakes have costs.'],
+        ['Prompt', 'PROMPT', 1, 'The input text or instructions given to an AI model to guide its response.', 'A clear prompt that states the goal, context, and format usually gets a better answer.', 'Including examples in the instructions is called few-shot prompting and often improves results.', 'Writing precise instructions is a practical skill for working with AI.'],
+        ['Perceptron', 'per-SEP-tron', 4, 'An early, simple model of a neuron that weighs inputs to produce a yes-or-no output.', 'The first perceptron could learn to separate simple patterns, such as certain shapes, from others.', 'Psychologist Frank Rosenblatt introduced it in 1958, and it is an ancestor of today’s neural networks.', 'It shows that the roots of modern AI stretch back decades.'],
+      ],
+    },
+    {
+      id: 'systems',
+      name: 'Computing Systems',
+      connection:
+        'The kernel and firmware control hardware, compilers translate code, and virtualization shares machines among many users. Caches, bandwidth, and latency determine speed, protocols let machines talk to each other, encryption keeps their conversations private, and recursion is a core idea in how programs solve problems.',
+      rows: [
+        ['Latency', 'LAY-ten-see', 3, 'The delay between a request and the start of its response.', 'Online gamers care about latency because even a short delay can make a game feel unresponsive.', 'Signals in optical fiber take about 100 milliseconds to travel halfway around the world, a physical limit on long-distance delays.', 'Low delay matters for gaming, video calls, and financial trading.'],
+        ['Bandwidth', 'BAND-width', 2, 'The maximum amount of data that can be transferred over a connection in a given time.', 'Streaming high-definition video needs more bandwidth than reading email.', 'It is not the same as delay: a connection can carry a lot of data yet still respond slowly.', 'Knowing the difference helps diagnose why a connection feels slow.'],
+        ['Compiler', 'kum-PY-ler', 3, 'A program that translates source code written by humans into machine code a processor can run.', 'The compiler caught a syntax error before the program could be run.', 'Grace Hopper wrote one of the first compilers in the early 1950s.', 'Translators like this let programmers write in readable languages and still get fast programs.'],
+        ['Kernel', 'KUR-nul', 3, 'The core of an operating system, which manages memory, processes, and hardware.', 'When a program asks to open a file, the kernel handles the request.', 'The Linux kernel was first released in 1991 by Linus Torvalds.', 'It sits between software and hardware, so its design shapes security and performance.'],
+        ['Cache', 'KASH', 2, 'A small, fast store that keeps copies of frequently used data so it can be retrieved quickly.', 'The browser keeps images in its cache so pages load faster on later visits.', 'Modern processors have several levels of such storage, because main memory is much slower than the processor itself.', 'Keeping copies close is one of the most common ways to make computer systems faster.'],
+        ['Encryption', 'en-KRIP-shun', 2, 'Scrambling data using a mathematical key so that only authorized parties can read it.', 'Encryption protects your messages and card details as they travel across the internet.', 'Modern methods rely on math problems that are easy to perform but extremely hard to reverse without the key.', 'It is the foundation of secure banking, messaging, and online shopping.'],
+        ['Protocol', 'PROH-tuh-kol', 2, 'A set of rules that defines how devices or programs exchange information.', 'The HTTP protocol defines how a web browser asks a server for a page.', 'The internet’s core protocols, TCP and IP, were designed in the 1970s.', 'Shared rules let machines from different makers work together.'],
+        ['Firmware', 'FURM-wair', 3, 'Permanent software stored in a device that controls its basic hardware functions.', 'A firmware update fixed a security flaw in the router.', 'It sits between hardware and higher-level software in devices from thermostats to televisions.', 'Keeping it updated is an important part of device security.'],
+        ['Virtualization', 'vur-choo-uh-lih-ZAY-shun', 4, 'Using software to create a simulated version of a computer or resource, so one machine can run many independent environments.', 'Virtualization lets a single server host dozens of isolated virtual machines.', 'It is a foundation of cloud computing, where customers rent virtual rather than physical machines.', 'It improves efficiency by letting hardware be shared securely.'],
+        ['Recursion', 'rih-KUR-zhun', 3, 'A technique in which a function solves a problem by calling itself on smaller versions of the same problem.', 'Recursion can calculate a factorial by multiplying a number by the factorial of one less.', 'Every recursive solution needs a base case that stops the repetition, or it will run forever.', 'Many classic methods, from sorting to searching trees, are naturally recursive.'],
+      ],
+    },
+    {
+      id: 'data-web',
+      name: 'Data & the Web',
+      connection:
+        'Databases store information and metadata describes it, while hyperlinks and cookies shape how we move through the web and open-source collaboration builds much of it. Authentication, biometrics, and encryption defend accounts, phishing shows how attackers go after people instead, and cybersecurity is the practice that ties defenses together. A blockchain is one way to keep a shared record without a central authority.',
+      rows: [
+        ['Database', 'DAY-tuh-bays', 1, 'An organized collection of data stored so it can be searched, updated, and managed efficiently.', 'A bank keeps customer accounts in a database that can be queried in milliseconds.', 'Many databases organize data into tables of rows and columns, a model proposed by Edgar F. Codd in 1970.', 'Nearly every app and website relies on one to remember things.'],
+        ['Metadata', 'MET-uh-day-tuh', 3, 'Data that describes other data, such as a photo’s date, location, and camera settings.', 'Metadata in an email includes the sender, recipient, and time sent, even without the message text.', 'A photo’s hidden details can reveal where it was taken, which is why some services strip them on upload.', 'It powers search and organization but can also expose private details.'],
+        ['Phishing', 'FISH-ing', 2, 'A scam in which attackers impersonate a trusted source to trick people into revealing passwords or other sensitive information.', 'The email claiming to be from the bank was phishing: it asked for the user’s password through a fake link.', 'A more targeted version aimed at specific people is called spear phishing, and it uses personal details to seem convincing.', 'Checking the sender and typing web addresses yourself are simple defenses.'],
+        ['Cookie', 'KUK-ee', 1, 'A small file that a website stores in your browser to remember information about your visit.', 'A cookie keeps you signed in, so you do not have to enter your password on every page.', 'Third-party versions can track browsing across multiple sites, which is why privacy laws often require consent notices.', 'Understanding them helps you manage your privacy online.'],
+        ['Blockchain', 'BLOK-chayn', 3, 'A shared digital ledger in which records, grouped into blocks, are linked together and are hard to alter after the fact.', 'Blockchain allows participants who do not trust one another to keep a common record without a central authority.', 'Bitcoin, launched in 2009, was the first widely used example.', 'Beyond cryptocurrency, the technology is being explored for record-keeping and supply chains, though its benefits are debated.'],
+        ['Open-source', 'OH-pen-sors', 3, 'Describing software whose underlying code is freely available for anyone to view, modify, and share.', 'The team built its website on open-source tools that anyone can inspect and improve.', 'The Linux operating system and the Firefox browser are well-known projects of this kind.', 'Open collaboration lets many people find bugs and share improvements.'],
+        ['Hyperlink', 'HY-per-link', 1, 'A clickable reference in a document that jumps to another location or page.', 'Each hyperlink on the page opens a related article.', 'These links are what turn separate documents into a web; Tim Berners-Lee proposed the World Wide Web in 1989.', 'Links let readers explore connected ideas and let search engines discover pages.'],
+        ['Authentication', 'aw-then-tih-KAY-shun', 3, 'The process of verifying that a person or device is who or what it claims to be.', 'Two-step authentication asks for a code from your phone in addition to your password.', 'Verification factors fall into three types: something you know, something you have, and something you are.', 'Using more than one factor greatly reduces the risk of account takeover.'],
+        ['Biometric', 'by-oh-MET-rik', 3, 'Relating to the measurement of physical traits, such as fingerprints or faces, to identify a person.', 'The phone unlocks with a biometric scan of your fingerprint.', 'Unlike a password, a body trait cannot be changed if its record is stolen, so storage and protection are important.', 'Convenience must be balanced with privacy when personal traits are used for identification.'],
+        ['Cybersecurity', 'sy-ber-sih-KYOOR-ih-tee', 3, 'The practice of protecting computers, networks, and data from unauthorized access or damage.', 'Good cybersecurity includes strong passwords, regular software updates, and cautious clicking.', 'The weakest link is often human error, such as reusing passwords or being tricked by a fake message.', 'Basic habits stop a large share of common attacks.'],
+      ],
+    },
+  ],
+});

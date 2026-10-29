@@ -1,0 +1,41 @@
+{
+  "format": "wordwise-pack",
+  "version": 1,
+  "category": {
+    "id": "kitchen-craft",
+    "name": "Kitchen Craft",
+    "shortName": "Kitchen",
+    "blurb": "The techniques and terms behind everyday cooking.",
+    "glyph": "✶",
+    "references": ["Your own trusted cookery reference goes here"],
+    "topics": [
+      {
+        "id": "heat",
+        "name": "Cooking with Heat",
+        "connection": "Each method controls how fast and how gently heat reaches the food, which decides texture and flavor.",
+        "rows": [
+          ["Blanch", "blanch", 2, "To briefly boil food, then cool it quickly in cold water to stop the cooking.", "She decided to blanch the green beans so they would stay bright and crisp.", "Blanching also loosens the skins of tomatoes and peaches, making them easy to peel.", "A short, timed step can lock in color and texture before freezing or finishing a dish."],
+          ["Braise", "brayz", 3, "To cook food slowly in a small amount of liquid in a covered pot, after browning it.", "A slow braise turns a tough cut of beef into something tender.", "Braising works best on cuts with plenty of connective tissue, which softens with long, gentle heat.", "It lets inexpensive ingredients become the centerpiece of a meal."],
+          ["Simmer", "SIM-er", 1, "To cook in liquid just below boiling, with only small bubbles rising.", "Let the soup simmer for twenty minutes so the flavors blend.", "A gentle simmer is usually well under the full rolling boil of water.", "Too much heat can toughen meat and cloud a broth."],
+          ["Sear", "seer", 2, "To brown the surface of food quickly over very high heat.", "Sear the steak on both sides before moving it to the oven.", "The browning comes from the Maillard reaction between amino acids and sugars.", "A dry surface and a hot pan are what create deep flavor."],
+          ["Poach", "pohch", 2, "To cook gently in liquid that is hot but not bubbling.", "You can poach an egg in barely moving water for a soft, tender white.", "Poaching liquid is typically held at a temperature below a simmer.", "It cooks delicate foods without drying them out."],
+          ["Deglaze", "dee-GLAYZ", 3, "To loosen the browned bits stuck to a pan by adding liquid and scraping.", "After the chicken rested, she used wine to deglaze the pan and start a sauce.", "Those stuck-on browned bits are often called fond, French for base.", "It turns what looks like a mess into the foundation of a sauce."]
+        ]
+      },
+      {
+        "id": "prep",
+        "name": "Prep and Technique",
+        "connection": "Good preparation, from cutting evenly to seasoning early, makes the cooking itself easier and more consistent.",
+        "rows": [
+          ["Julienne", "joo-lee-EN", 3, "To cut food into thin, matchstick-sized strips.", "The recipe asked her to julienne the carrots for the salad.", "The cut is traditionally about the size of a matchstick, often a few millimeters thick.", "Uniform pieces cook evenly and look appealing on the plate."],
+          ["Marinate", "MAR-uh-nayt", 1, "To soak food in a seasoned liquid before cooking to add flavor.", "You should marinate the chicken for at least an hour before grilling.", "Acidic marinades only penetrate the surface of meat, so long soaks add little beyond flavor.", "Planning ahead builds flavor with very little effort at the stove."],
+          ["Emulsify", "ih-MUL-suh-fy", 4, "To combine two liquids that normally separate, such as oil and water, into a smooth mixture.", "Whisking slowly helps emulsify the oil into the vinegar for a creamy dressing.", "Egg yolk contains lecithin, a natural emulsifier that helps mayonnaise hold together.", "Understanding the idea explains why sauces break and how to rescue them."],
+          ["Caramelize", "KAIR-uh-myz", 3, "To heat sugar, or foods containing sugar, until it browns and develops a deeper, sweeter flavor.", "Onions take a long time to caramelize over low heat.", "True caramelization of sucrose begins at roughly 160 degrees Celsius (320 degrees Fahrenheit).", "Patience, not extra heat, is what gives caramelized onions their sweetness."],
+          ["Reduce", "rih-DOOS", 2, "To boil or simmer a liquid until some of it evaporates, concentrating the flavor.", "Reduce the sauce by half so it thickens and tastes richer.", "Because the water evaporates but the flavor compounds stay, a reduced sauce tastes more intense.", "It is the simplest way to thicken a sauce without adding flour."],
+          ["Season", "SEE-zun", 1, "To add salt, pepper, herbs, or spices to improve the flavor of food.", "Taste as you go and season the dish a little at a time.", "Salt added early has time to penetrate food, while salt added at the end mostly stays on the surface.", "Tasting and adjusting is the habit that separates good cooks from those who follow recipes blindly."]
+        ]
+      }
+    ]
+  },
+  "review": { "status": "draft" }
+}

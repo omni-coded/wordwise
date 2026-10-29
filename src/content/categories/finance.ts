@@ -1,0 +1,71 @@
+import { defineCategory } from '../author';
+
+export default defineCategory({
+  id: 'finance',
+  name: 'Personal Finance & Economics',
+  shortName: 'Finance',
+  blurb: 'Money, markets, and the forces that shape your financial life.',
+  glyph: '¤',
+  references: [
+    'Investor.gov glossary (U.S. Securities and Exchange Commission)',
+    'Consumer Financial Protection Bureau (consumerfinance.gov)',
+    'Federal Reserve Education (federalreserveeducation.org)',
+    'Bank of England Knowledge Bank (bankofengland.co.uk/knowledgebank)',
+  ],
+  topics: [
+    {
+      id: 'saving-investing',
+      name: 'Saving & Investing',
+      connection:
+        'An asset is anything of value you own, and a portfolio is the collection of them. Diversification spreads risk across that portfolio, volatility measures how bumpy the ride is, and liquidity tells you how fast you can reach your money. Dividends, yield, and compounding show how investments pay you, and an annuity or home equity can turn savings into income or wealth.',
+      rows: [
+        ['Compounding', 'KOM-pound-ing', 2, 'Earning returns on both your original money and on the returns already earned.', 'Thanks to compounding, 1,000 dollars growing at 7 percent a year becomes about 1,967 dollars after ten years.', 'The Rule of 72 gives a quick estimate: divide 72 by the annual return percentage to find roughly how many years it takes to double your money.', 'Starting early gives compounding more time to work, which is why small, regular contributions can grow large.'],
+        ['Diversification', 'dih-ver-sih-fih-KAY-shun', 3, 'Spreading money across different investments so that one poor performer does not sink the whole collection.', 'Holding stocks, bonds, and cash is basic diversification: a fall in one may be offset by stability in another.', "Harry Markowitz's modern portfolio theory, which earned him a share of the 1990 Nobel Memorial Prize in Economic Sciences, formalized the benefits of diversification.", 'It is one of the few ways to reduce risk without necessarily giving up expected return.'],
+        ['Dividend', 'DIV-ih-dend', 2, "A share of a company's profits paid out to its shareholders.", 'The company pays a quarterly dividend to everyone who owns its shares.', 'A company can cut or cancel its dividend, so payments are never guaranteed.', 'Dividends are part of the total return from owning stocks and can be reinvested to compound growth.'],
+        ['Portfolio', 'port-FOH-lee-oh', 2, 'The collection of investments that an individual or institution owns.', 'Her retirement portfolio holds index funds, bonds, and a small cash reserve.', 'The word comes from the Italian portafoglio, meaning a case for carrying papers.', 'Thinking about the whole portfolio, rather than single investments, is the basis of managing risk.'],
+        ['Liquidity', 'lih-KWID-ih-tee', 3, 'How quickly and easily an asset can be turned into cash without a significant loss in value.', 'Savings accounts offer high liquidity, while a rental property offers very little.', 'A profitable business can still fail if it lacks the liquidity to pay its bills on time.', 'An emergency fund is essentially planned liquidity.'],
+        ['Equity', 'EK-wih-tee', 2, "Ownership value; in a company it is the owners' stake, and in a home it is the market value minus what is owed.", 'After years of mortgage payments, she had built up significant equity in her home.', 'Stocks are often called equities because they represent ownership shares in a company.', 'Equity is how ordinary people build wealth through ownership of businesses and property.'],
+        ['Annuity', 'uh-NOO-ih-tee', 3, 'A contract or stream of regular payments, often bought from an insurer to provide retirement income.', 'He used part of his savings to buy an annuity that pays a fixed monthly income for life.', 'Annuities shift longevity risk, the chance of outliving your savings, from the individual to the insurer.', 'They are one tool for turning a lump sum into predictable income, though fees and terms vary widely.'],
+        ['Yield', 'YEELD', 2, 'The income an investment returns, usually expressed as an annual percentage of its cost or current value.', 'A bond paying 40 dollars a year on a 1,000 dollar price has a current yield of 4 percent.', 'Bond prices and yields move in opposite directions: when prices fall, yields rise.', 'Comparing yields helps investors weigh income against risk across different investments.'],
+        ['Asset', 'AS-set', 1, 'Anything of value that a person or company owns, such as cash, property, or investments.', 'A car, a savings account, and shares of stock are all assets.', 'Accountants record assets on the balance sheet, which must always balance against liabilities plus equity.', 'Net worth is simply total assets minus total liabilities.'],
+        ['Volatility', 'vol-uh-TIL-ih-tee', 3, 'How much and how quickly the price of an investment swings up and down.', 'Small company stocks usually show more volatility than large, established ones.', 'The VIX index, often called the fear gauge, estimates expected volatility in the U.S. stock market.', 'Volatility is a common measure of risk, and your tolerance for it should shape how you invest.'],
+      ],
+    },
+    {
+      id: 'credit-debt',
+      name: 'Credit & Debt',
+      connection:
+        'Interest is the price of borrowing, charged on the principal. A mortgage uses the home as collateral, and amortization spreads repayment over time. Every loan is a liability, solvency tells you whether you can carry your debts, and overdrafts, default, and refinancing describe what happens when borrowing goes wrong or needs to be reshaped.',
+      rows: [
+        ['Amortization', 'am-ur-tih-ZAY-shun', 4, 'Paying off a debt through scheduled payments that cover both the interest and part of the amount borrowed.', 'An amortization schedule shows how each mortgage payment is split between interest and principal.', 'In the early years of a long loan, most of each payment goes to interest, and the share that reduces the balance grows over time.', 'Understanding amortization reveals the true cost of a loan and the value of extra payments.'],
+        ['Collateral', 'kuh-LAT-er-ul', 3, 'An asset a borrower pledges to a lender that can be seized if the loan is not repaid.', 'The bank accepted the delivery van as collateral for the business loan.', "A loan backed by collateral usually carries a lower interest rate than an unsecured one because the lender's risk is smaller.", 'Knowing exactly what you have pledged is essential before you borrow.'],
+        ['Mortgage', 'MOR-gij', 2, 'A loan used to buy property in which the property itself serves as security for the debt.', 'They took out a 30-year mortgage to buy their first home.', 'The word comes from Old French and literally means “dead pledge.”', 'For most households it is the largest debt they will ever take on, so terms and rates matter greatly.'],
+        ['Liability', 'ly-uh-BIL-ih-tee', 2, 'A financial obligation, or something you owe to another person or organization.', 'A car loan and a credit card balance each count as a liability.', "On a balance sheet, liabilities appear alongside equity as the claims against a company's assets.", 'Tracking liabilities against assets shows your real financial position.'],
+        ['Overdraft', 'OH-ver-draft', 2, 'A withdrawal or payment that exceeds the money available in a bank account.', 'Her bank charged a fee each time an overdraft occurred.', 'Many banks offer overdraft protection or linked savings accounts as cheaper alternatives to overdraft fees.', 'Knowing your overdraft terms can help you avoid unnecessary fees.'],
+        ['Solvency', 'SOL-ven-see', 3, 'The ability of a person or company to meet long-term debts and financial obligations.', "Auditors reviewed the firm's solvency by comparing its total assets with its total debts.", 'An insolvent entity owes more than it owns, while an illiquid one may simply lack cash right now.', 'Solvency checks reveal whether a business or household is on firm footing for the long term.'],
+        ['Interest', 'IN-ter-est', 1, 'The cost of borrowing money, or the reward for lending or saving it, usually stated as a percentage rate.', 'The credit card charges interest on any balance not paid in full each month.', 'Simple interest is calculated only on the original amount, while compound interest also accrues on earlier interest.', 'Interest builds wealth or deepens debt, depending on which side of it you are on.'],
+        ['Default', 'dih-FAWLT', 2, 'Failure to repay a loan or to meet the terms of a debt agreement.', 'After missing several payments, the borrower went into default and the lender began collection.', 'Defaults are recorded on credit reports and can lower credit scores for years.', 'Knowing the consequences of default helps borrowers act early and ask lenders about hardship options.'],
+        ['Refinance', 'ree-FY-nanss', 3, 'To replace an existing loan with a new one, usually to get a lower rate or different terms.', 'When rates dropped, they chose to refinance their mortgage and cut their monthly payment.', 'Refinancing often carries closing costs, so the savings must outweigh the fees to be worthwhile.', 'Comparing total costs before you refinance can protect you from a bad deal.'],
+        ['Principal', 'PRIN-suh-pul', 2, 'The original amount borrowed or invested, not counting interest.', 'Each payment on the loan reduces the principal a little more.', 'Paying extra toward principal shortens a loan and cuts the total interest paid.', 'Knowing the difference between principal and interest shows where your payments actually go.'],
+      ],
+    },
+    {
+      id: 'economy',
+      name: 'Economy & Markets',
+      connection:
+        'Scarcity forces choices, elasticity shows how buyers respond to price changes, and productivity determines how much an economy can produce. Monopolies, subsidies, and tariffs are ways markets and governments shape prices. Inflation, deflation, recession, and stagflation describe the economy’s swings.',
+      rows: [
+        ['Inflation', 'in-FLAY-shun', 2, 'A sustained rise in the general level of prices that reduces what each unit of money can buy.', 'With inflation at 3% a year, prices roughly double in about 24 years.', 'Many central banks aim for inflation of about 2% a year, which they view as consistent with stable prices.', 'It quietly erodes savings, so earnings and returns must outpace it to protect purchasing power.'],
+        ['Deflation', 'dee-FLAY-shun', 3, 'A sustained fall in the general level of prices.', 'Japan went through long periods of deflation after its asset bubble burst in the early 1990s.', 'Falling prices can sound good, but they may lead households and firms to delay spending, which can deepen a downturn.', 'Central banks work to avoid deflation as carefully as they avoid high inflation.'],
+        ['Recession', 'rih-SESH-un', 2, 'A significant, widespread decline in economic activity lasting more than a few months.', 'Unemployment typically rises during a recession as businesses cut back.', 'A common rule of thumb defines a recession as two consecutive quarters of falling GDP, though official dating bodies use broader measures.', 'Recognizing recession signals helps households and businesses prepare with savings and flexibility.'],
+        ['Stagflation', 'stag-FLAY-shun', 4, 'A combination of slow economic growth, high unemployment, and rising prices.', 'The oil shocks of the 1970s pushed many economies into stagflation.', 'British politician Iain Macleod is credited with coining the term in 1965.', 'It is hard for policymakers to fight because the usual cure for one problem worsens the other.'],
+        ['Subsidy', 'SUB-sih-dee', 3, 'Financial support from a government that lowers the cost of producing or buying something.', 'A subsidy on solar panels made rooftop installations cheaper for homeowners.', 'Supporters say subsidies encourage useful activity, while critics argue they can distort markets and cost taxpayers.', 'Subsidies shape prices for food, energy, and housing, so they affect almost everyone.'],
+        ['Monopoly', 'muh-NOP-uh-lee', 2, 'A market situation in which a single seller controls the supply of a good or service.', 'The railroad enjoyed a monopoly on freight in the region, so customers had no alternative.', 'Many countries have antitrust laws, such as the U.S. Sherman Act of 1890, to limit monopolies and protect competition.', 'Competition policy rests on understanding monopolies, which tend to raise prices and reduce choice.'],
+        ['Tariff', 'TAIR-if', 2, 'A tax placed on imported goods.', 'The government raised the tariff on imported steel to protect domestic producers.', 'Tariffs raise the price of imports, so the cost is often shared among foreign exporters, domestic importers, and consumers.', 'Tariffs affect trade relationships and the prices people pay.'],
+        ['Elasticity', 'ee-lass-TISS-ih-tee', 4, 'A measure of how much the quantity demanded or supplied of a good changes when its price changes.', 'The elasticity of demand for salt is low because people buy about the same amount whatever it costs.', 'Necessities such as gasoline tend to have inelastic demand, while luxuries tend to have elastic demand.', 'Businesses use elasticity to set prices, and governments use it to predict the effects of taxes.'],
+        ['Scarcity', 'SKAIR-sih-tee', 2, 'The basic economic condition that wants are unlimited while resources are limited.', 'Because of scarcity, every choice to spend time or money one way means giving up another option.', 'Many economists define economics as the study of how societies allocate scarce resources.', 'Scarcity is the reason prices, budgets, and trade-offs exist at all.'],
+        ['Productivity', 'proh-duk-TIV-ih-tee', 3, 'The amount of output produced per unit of input, such as per hour of labor.', "New software raised the factory's productivity by reducing the hours needed per product.", 'Economists consider rising productivity the main driver of long-run growth in living standards.', 'It determines how much an economy can earn, pay, and consume.'],
+      ],
+    },
+  ],
+});

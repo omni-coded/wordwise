@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/engine", "src/content", "src/game", "tests", "scripts/*.ts"],
+  "exclude": ["src/game/audio.ts"]
+}
